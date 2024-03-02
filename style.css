@@ -36,11 +36,16 @@ header{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+.navp a:hover{
+    cursor: pointer;
+    color: #ff0783;
+    font-size:22px ;
+}
 .frontpage{
     height: 780px;
     width: 100%;
     background-image: url(rn\ background.jpg);
-    opacity: 35%;
+    opacity: 40%;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 55px;
