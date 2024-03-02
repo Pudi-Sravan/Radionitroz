@@ -130,6 +130,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 memberElement.innerHTML = `
                     <img src="${member.image}" alt="" class="members">
                     <div class="details">
+                    <div class="teamcon">
+                    <i class="fa-solid fa-envelope" id="teamco1" ></i>
+                    <i class="fa-solid fa-phone" id="teamco"></i></div>
                         <div class="name">${member.name}</div>
                         <div class="position">${member.position}</div>
                     </div>`;
@@ -238,30 +241,47 @@ document.addEventListener('DOMContentLoaded', function() {
         showAlumni();
     
         // Auto-cycle through alumni every 35 seconds
-        setInterval(showNextAlumni, 5500);
-            
-        let presentgall = 0;
-        const images = document.querySelectorAll('.image');
-        
-        // Show the first image initially
-        images[presentgall].style.display = 'block';
-        
-        function nextImage() {
-            images[presentgall].style.display = 'none';
-            presentgall = (presentgall + 1) % images.length;
-            images[presentgall].style.display = 'block';
-        }
-        
-        function prevImage() {
-            images[presentgall].style.display = 'none';
-            presentgall = (presentgall - 1 + images.length) % images.length;
-            images[presentgall].style.display = 'block';
-        }
-        
-        // Auto next every 2 seconds
-        setInterval(nextImage, 2000);
-           
-
-        
-     
+        setInterval(showNextAlumni, 5500);    
 })
+
+let count = 1;
+let vidcount = 1;
+
+function nextImage(){
+    let presentImage = document.getElementById(`img${count}`);
+    let nextCount = (count % 8) + 1;
+    let nextImage = document.getElementById(`img${nextCount}`);
+    presentImage.style.display = 'none';
+    nextImage.style.display = 'block';
+    count = nextCount;
+}
+
+function prevImage(){
+    let presentImage = document.getElementById(`img${count}`);
+    let prevCount = (count - 2 + 8) % 8 + 1;
+    let prevImage = document.getElementById(`img${prevCount}`);
+    presentImage.style.display = 'none';
+    prevImage.style.display = 'block';
+    count = prevCount;
+}
+
+function nextvidImage(){
+    let presentvidImage = document.getElementById(`vidimg${vidcount}`);
+    let nextVidCount = (vidcount % 11) + 1;
+    let nextvidImage = document.getElementById(`vidimg${nextVidCount}`);
+    presentvidImage.style.display = 'none';
+    nextvidImage.style.display = 'block';
+    vidcount = nextVidCount;
+}
+
+function prevvidImage(){
+    let presentvidImage = document.getElementById(`vidimg${vidcount}`);
+    let prevVidCount = (vidcount - 2 + 11) % 11 + 1;
+    let prevvidImage = document.getElementById(`vidimg${prevVidCount}`);
+    presentvidImage.style.display = 'none';
+    prevvidImage.style.display = 'block';
+    vidcount = prevVidCount;
+}
+
+setInterval(nextImage, 3000);
+setInterval(nextvidImage, 3000);
