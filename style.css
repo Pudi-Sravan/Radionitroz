@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0px;
@@ -13,7 +14,7 @@ header{
     background-image: url(starsky.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 55%;
+    opacity: 75%;
     height: 70px;
     z-index: 1000;
 }
@@ -37,9 +38,32 @@ header{
 }
 .frontpage{
     height: 780px;
-    width: 98%;
+    width: 100%;
     background-image: url(rn\ background.jpg);
-    border-radius: 25px;
+    opacity: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 55px;
+    position: relative;
+}
+.attr{
+    position: absolute;
+    top: 600px;
+    left: 37%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+}
+#conlik{
+    font-size: 25px;
+    margin: 15px;
+    color: white;
+}
+#conlik:hover{
+    color:#878ffa;
+    font-size: 30px;
 }
 body{
     background-color: rgb(0, 0, 0);
@@ -51,6 +75,7 @@ body{
 }
 .hidden-content{
     display: none;
+    font-style: poppins;
 }
 .read-more {
     cursor: pointer;
@@ -72,14 +97,18 @@ body{
 }
 .aboutus{
     font-size: 50px;
-    color: #3a45df;
+    color: #ef0d6b;
     margin-bottom: 10px;
+    font-family: poppins;
+    font-weight: bold;
 }
 .eventhead{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3a45df;
+    color: #ef0d6b;
+    font-family: poppins;
+    font-weight: bold;
     font-size: 30px;
 }
 .eventimage{
@@ -115,7 +144,7 @@ body{
 }
 #eventlink{
     font-size: 20px;
-    color: #ff71e0;
+    color: #f98de1;
 }
 .main{
     display: flex;
@@ -163,7 +192,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #3a45df;
+    color: #ef0d6b;
+    font-family: poppins;
+    font-weight: bold;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -179,7 +210,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     width: 300px;
-    height: 240px;
+    height: 255px;
     margin: 30px;
     background-color: #ffffffe7;   
     border-radius: 22px;
@@ -238,7 +269,9 @@ footer{
     
 }
 .heading {
-    color: #3a45df;
+    color: #ef0d6b;
+    font-family: poppins;
+    font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -268,10 +301,18 @@ footer{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+.controls button:hover{
+    cursor: pointer;
+    background-color: #0064ce;
 }
 
 .sponsorhead{
-    color: #3a45df;
+    color: #ef0d6b;
+    font-family: poppins;
+    font-weight: bold;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -334,6 +375,7 @@ footer{
     justify-content: space-evenly;
 }
 .facdetails{
+    margin-left: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,6 +396,26 @@ footer{
     justify-content: center;
     flex-direction: column;
 }
+.teamcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#teamco1{
+    font-size: 22px;
+    margin-right: 10px;
+    color: #0064ce;
+}
+#teamco{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #0064ce;
+}
+#teamco:hover,#teamco1:hover{
+    cursor: pointer;
+    font-size: 26px;
+    color: #024fa2;
+}
 .content{
     display: flex;
     align-items: center;
@@ -372,8 +434,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3a45df;
-    font-size: 30px;
+    color: #ef0d6b;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 45px;
 }
 .feed{
     margin: 20px;
@@ -442,13 +506,113 @@ footer{
     color: white;
 }
 #webteam{
+    text-decoration: none;
     font-size: 15px;
-    background-color: rgba(0, 0, 0, 0);
     color: white;
 }
 #webteam:hover{
     font-size: 18px;
-    color: #3a45df;
+    color: #63d6eb;
     font-weight: bold;
     cursor: pointer;
+}
+.gall h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef0d6b;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.gall-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide{
+    width: 80px;
+    height: 100px;
+    border: none;
+    font-size: 60px;
+    padding: 5px;
+    margin: 0px 20px;
+    color: #007bff;
+    background-color: transparent;
+}
+.slide:hover{
+    cursor: pointer;
+    color: #0465cc;
+    font-size: 65px;
+}
+
+.gall-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slide-img{
+    display: none;
+    width: 1200px;
+    height: 650px;
+}
+
+#img1{
+    display: block;
+}
+.vid h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef0d6b;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.vid-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidslide{
+    width: 80px;
+    height: 100px;
+    border: none;
+    font-size: 60px;
+    padding: 5px;
+    margin: 0px 20px;
+    color: #007bff;
+    background-color: transparent;
+}
+.vidslide:hover{
+    cursor: pointer;
+    color: #0465cc;
+    font-size: 65px;
+}
+
+.vid-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.vidslide-img{
+    display: none;
+    width: 1200px;
+    height: 650px;
+}
+
+#vidimg1{
+    display: block;
 }
