@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radionitroz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="func.js" defer></script>
 </head>
 <body>
@@ -21,11 +22,18 @@
             <p class="navp"><a href="#contact">CONTACT US</a></p>        
         </div>
     </header>
-    <div class="frontpage"></div>
+    <div class="frontpage">
+        <div class="attr">
+        <i class="fa-brands fa-instagram" id="conlik" ></i>
+        <i class="fa-brands fa-facebook" id="conlik" ></i>
+        <i class="fa-solid fa-envelope" id="conlik" ></i>
+        <i class="fa-brands fa-youtube" id="conlik" ></i>
+        </div>  
+    </div>
     <div id="about" class="about">
         <div class="aboutus">ABOUT US</div>
         <div class="imgpluscon" id="impco">
-            <div class="content">
+            <div class="content" style="font-family: poppins;">
                 <p> It is with immense pleasure and an enthusiastic heart that we, the creative team behind Radio NITroz, welcome you to the world of amusement and entertainment. At NIT Durgapur, we believe that college life is meant to be relished, and Radio NITroz is on a mission to add that extra flavor to your already colorful journey. Our intention to provide you with entertainment started way back in 2006, which led us to start the club, and since then Radio NITroz has come a long way since after we moved to Youtube community with exciting Podcasts,Success story and Freshers intro. Remember the days when you could tune into Radio NITroz via VLC and dedicate songs to your loved ones? It was a fantastic feeling to be showered with love and appreciation! We organize various events throughout the year that cater to different interests. Take, for instance, our 'Meme-RaN-Tine' event, where participants can showcase their sense of humor, or 'Movie Mystics,' where we pose exciting riddles related to movies. We believe that talent is just a word until you reveal it, and to expose your talent is our excitement as we came up with our most exciting event 'Talent X' and also our 'Voice It Out' event that provides a platform for live poem recitations, creating a striking ambiance for all. And how can we forget 'Khol E Dil,' where your confession isn't left unconfessed anymore! We also cherish our cultural heritage and organize events such as 'Matki Fod' on the auspicious occasion of Janmashtami and 'Shaam-E-Noor,' an online event on Diwali to celebrate, where every smile of yours is shared with our ever-growing family.And how can we forget Recstacy (now Nityamini) - the Cultural Fest of NIT Durgapur, where we host a myriad of exciting events like Dare you and pull N move!</p>
                 <div class="hidden-content">
                     <p>As a team, we make sure that every event we organize becomes a milestone.Our club is more like a family that aims to connect with people, acting as college media and spreading joy and laughter throughout the campus. So, come join us, and let's fill our lives with some fun and entertainment!We work on the motto to make life a bit easy and fun, so we comes up with innovative ideas of fun events like <strong>'Meme-RaN-Tine'</strong> where participants can show off their sence of humor, <strong>'Movie Mystics'</strong> with its exciting and interesting riddles. Everybody is talented because everyone has something to express, with this objective we projected <strong>'College Ke Tashanbaaz'</strong> which can earn them some fame. Then <strong>'Voice It Out'</strong>  was a live poem recitation event which provided a striking rostrum to everyone. To reduce the burden of onea hearts we organised <strong>'Khol-E-Dil'</strong>. We also arranged several events based on our cultural values like <strong>'Matki Fod'</strong> on the auspicious occasion of Janmashtami and <strong>'Shaam-E-Noor'</strong> for special diwali vibes. Then we also did <strong>'Funtastic'</strong> for our freshers as a fun and T-shirt painting event. Our <strong>'Jukebox'</strong> event arena during Aarohan (Techno - Management Fest of NIT Durgapur) is so attractive among students. We also have a lot of events during Recstacy (Now Nityamini) which is the Cultural Fest of NIT Durgapur. We work as a team to make sure that every event is a milestone. Our Social outreach has grown a lot for a variety of exciting events. The basic intention of the formation of this club or better say family is to communicate with the "Aam Janta" of NIT Durgapur, be a college media and fill the campus with our Bakar and Fun.</p>
@@ -57,6 +65,35 @@
             </div>
         </div>
     </div>
+
+    <div class="vid" id="videos">
+
+        <h2>VIDEOS & SERIES</h2>
+
+        <div class="vid-container">
+
+            <button class="vidslide"  id="vidprev" onclick="prevvidImage()"><i class="fa-solid fa-circle-right fa-rotate-180"></i></button>
+
+            <div class="vid-images">
+                <img src="videos/dil_ki_ek_diary_se.jpeg" alt="vidImage 1" class="vidslide-img" id="vidimg1">
+                <img src="videos/freshers.jpeg" alt="vidImage 2" class="vidslide-img" id="vidimg2">
+                <img src="videos/freshers_intro.jpeg" alt="vidImage 3" class="vidslide-img" id="vidimg3">
+                <img src="videos/karthick&hemanika.jpeg" alt="vidImage 4" class="vidslide-img" id="vidimg4">
+                <img src="videos/kasauti jhanduon ki.jpeg" alt="vidImage 5" class="vidslide-img" id="vidimg5">
+                <img src="videos/Nit_durgapur_special.jpeg" alt="vidImage 6" class="vidslide-img" id="vidimg6">
+                <img src="videos/prank.jpeg" alt="vidImage 7" class="vidslide-img" id="vidimg7">
+                <img src="videos/success_stories.jpeg" alt="vidImage 8" class="vidslide-img" id="vidimg8">
+                <img src="videos/the_rn_pod.jpeg" alt="vidImage 9" class="vidslide-img" id="vidimg9">
+                <img src="videos/Tnt..jpeg" alt="vidImage 10" class="vidslide-img" id="vidimg10">
+                <img src="videos/video_kahinka.jpeg" alt="vidImage 11" class="vidslide-img" id="vidimg11">
+            </div>
+
+            <button class="vidslide" id="vidnext" onclick="nextvidImage()"><i class="fa-solid fa-circle-right"></i></button>
+            
+        </div>
+
+    </div>
+    
     <div id="team" class="ourteam">
         <div class="teamhead"><h2>TEAM RN</h2></div>
         <div class="faculty">
@@ -67,6 +104,9 @@
                 <div class="facname"><b>Dr. Tushar Kanti Bera</b></div>
                 <div class="facposition"><span style="display: block;">Associate Professor,<br>EE Department,<br> NIT Durgapur.</span></div>
                 <div class="facsocial-link"><a class="social" href="mailto:tusharkanti.bera@ee.nitdgp.ac.in"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg></a><a class="social" href="tel:9448853303"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg></a></div>
+                <div class="teamcon">
+                    <i class="fa-solid fa-envelope" id="teamco1" ></i>
+                    <i class="fa-solid fa-phone" id="teamco"></i></div>
             </div>
             </div>        
         </div>
@@ -87,23 +127,29 @@
         </div>
     </div>
     
-    <div class="gall" id="gallery" style="display:none;">
-        <div class="gallhead"><h2>GALLERY</h2></div>
-        <div class="gallery-container">
-            <button class="prev" onclick="prevImage()">Previous</button>
-            <div class="gallery">
-                <div class="image"><img src="gallery/freshers.jpeg" alt="Image 1"></div>
-                <div class="image"><img src="gallery/im10.8c4ad11d.jpeg" alt="Image 2"></div>
-                <div class="image"><img src="gallery/im11.eadb842a.jpeg" alt="Image 3"></div>
-                <div class="image"><img src="gallery/im12.92b81532.jpeg" alt="Image 4"></div>
-                <div class="image"><img src="gallery/im13.10c6ad14.jpeg" alt="Image 5"></div>
-                <div class="image"><img src="gallery/im14.7fb5a94e.jpeg" alt="Image 6"></div>
-                <div class="image"><img src="gallery/im7.816f00f0.jpeg" alt="Image 7"></div>
-                <div class="image"><img src="gallery/im9.647a6519.jpeg" alt="Image 8"></div>               
-            </div>        
-        
-        <button class="next" onclick="nextImage()">Next</button>
-    </div>
+    <div class="gall" id="gallery">
+
+        <h2>GALLERY</h2>
+
+        <div class="gall-container">
+
+            <button class="slide"  id="prev" onclick="prevImage()"><i class="fa-solid fa-circle-right fa-rotate-180"></i></button>
+
+            <div class="gall-images">
+                <img src="gallery/freshers.jpeg" alt="Image 1" class="slide-img" id="img1">
+                <img src="gallery/im10.8c4ad11d.jpeg" alt="Image 2" class="slide-img" id="img2">
+                <img src="gallery/im11.eadb842a.jpeg" alt="Image 3" class="slide-img" id="img3">
+                <img src="gallery/im12.92b81532.jpeg" alt="Image 4" class="slide-img" id="img4">
+                <img src="gallery/im13.10c6ad14.jpeg" alt="Image 5" class="slide-img" id="img5">
+                <img src="gallery/im14.7fb5a94e.jpeg" alt="Image 6" class="slide-img" id="img6">
+                <img src="gallery/im7.816f00f0.jpeg" alt="Image 7" class="slide-img" id="img7">
+                <img src="gallery/im9.647a6519.jpeg" alt="Image 8" class="slide-img" id="img8">
+            </div>
+
+            <button class="slide" id="next" onclick="nextImage()"><i class="fa-solid fa-circle-right"></i></button>
+            
+        </div>
+
     </div>
     
     
@@ -145,7 +191,7 @@
     <footer>
         <div class="footercont">
             <p>© Copyright 2021 Radio Nitroz NITDGP</p>
-            <span>Made with by <button id="webteam">Web-Team</button>
+            <span>Made with by <a id="webteam">Web-Team</a>
             </span><span>© All Rights Reserved</span></div>
     </footer>
 </body>
