@@ -242,7 +242,39 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Auto-cycle through alumni every 35 seconds
         setInterval(showNextAlumni, 5500);    
-})
+    })
+        var checkbox = document.getElementById('check');
+        var nav = document.getElementById('nav');
+        var attr = document.getElementById('attr');
+    
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                nav.style.left = '-1.5%';
+                attr.style.display = 'none';
+            } else {
+                nav.style.left = '-205%'; 
+                attr.style.display = 'flex';
+            }
+            // Force reflow to ensure smooth transition
+            void nav.offsetWidth;
+            void attr.offsetWidth;
+    
+            // Toggle navigation position based on checkbox state
+            if (this.checked) {
+                nav.style.left = '-1.5%'; 
+            } else {
+                nav.style.left = '-205%'; 
+            }
+        });
+    
+        var navpa = document.getElementsByClassName("navpa");
+        for (var i = 0; i < navpa.length; i++) {
+            navpa[i].addEventListener('click', function() {
+                checkbox.checked = false; // Uncheck the checkbox
+                setTimeout(function() {
+                    nav.style.left = '-205%';}, 800);  
+            });
+        }
 
 let count = 1;
 let vidcount = 1;
