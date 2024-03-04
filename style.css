@@ -1,623 +1,1667 @@
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    padding: 0px;
-    box-sizing: border-box;
-    margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
 }
-header{
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url(starsky.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 65%;
-    height: 70px;
-    z-index: 1000;
+
+header {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(starsky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 65%;
+  height: 70px;
+  z-index: 1000;
 }
-.logo{
-    margin-left: 15px;
-    height: 68px;
-    width: 68px;
+.logo {
+  margin-left: 15px;
+  height: 68px;
+  width: 68px;
 }
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navp a{
-    font-style: poppins;
-    font-weight: bold;
-    margin-right: 24px;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.navp a {
+  font-style: poppins;
+  font-weight: bold;
+  margin-right: 24px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-.navp a:hover{
-    cursor: pointer;
-    color: #ff0783;
-    font-size:22px ;
+.navp a:hover {
+  cursor: pointer;
+  color: #ff0783;
+  font-size: 22px;
 }
-.frontpage{
-    height: 780px;
-    width: 100%;
-    background-image: url(rn\ background.jpg);
+.checkbox {
+  font-size: 30px;
+  color: white;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.frontpage {
+  height: 780px;
+  width: 100%;
+  border-radius: 55px;
+  position: relative;
+}
+.frontpage img{
+    height:100%;
+    width:100%;
     opacity: 40%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 55px;
-    position: relative;
 }
-.attr{
-    position: absolute;
-    top: 600px;
-    left: 37%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 400px;
+.attr {
+  position: absolute;
+  top: 575px;
+  left: 37%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 400px;
 }
-#conlik{
-    font-size: 25px;
-    margin: 15px;
-    color: white;
+#conlik {
+  font-size: 25px;
+  margin: 15px;
+  color: white;
 }
-#conlik:hover{
-    color:#878ffa;
-    font-size: 30px;
+#conlik:hover {
+  color: #878ffa;
+  font-size: 30px;
 }
-body{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 5px;
+body {
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 5px;
 }
-.hidden-content{
-    display: none;
-    font-style: poppins;
+.hidden-content {
+  display: none;
+  font-style: poppins;
 }
 .read-more {
-    cursor: pointer;
-    color: rgb(0, 183, 255);
-    text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 183, 255);
+  text-decoration: none;
 }
-.about{ 
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    margin: 5px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    padding-top: 0px;
-    width: 98%;
+.about {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0px;
+  width: 98%;
 }
-.aboutus{
-    font-size: 50px;
-    color: #ef0d6b;
-    margin-bottom: 10px;
-    font-family: poppins;
-    font-weight: bold;
+.aboutus {
+  font-size: 50px;
+  color: #ef0d6b;
+  margin-bottom: 10px;
+  font-family: poppins;
+  font-weight: bold;
 }
-.eventhead{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ef0d6b;
-    font-family: poppins;
-    font-weight: bold;
-    font-size: 30px;
+.eventhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef0d6b;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 30px;
 }
-.eventimage{
-    height: 350px;
-    width: 400px;
+.eventimage {
+  height: 350px;
+  width: 400px;
 }
-.event{
-    width: 300px;
-    margin: 30px;
-    background-color: #323131e7;   
-    border-radius: 20px;
-    position: relative;
-    color: white;
-    overflow: hidden;
+.event {
+  width: 300px;
+  margin: 30px;
+  background-color: #323131e7;
+  border-radius: 20px;
+  position: relative;
+  color: white;
+  overflow: hidden;
 }
-.eve{
-    width: 300px;
-    margin: 10px;
-    background-color: #3e3b3900;
-    overflow: hidden;
-    position: relative;
-    padding: 0px;
-    padding-right: 25px;
-    
+.eve {
+  width: 300px;
+  margin: 10px;
+  background-color: #3e3b3900;
+  overflow: hidden;
+  position: relative;
+  padding: 0px;
+  padding-right: 25px;
 }
-.title1{
-    width: 100%;
-    background-color: #3e3b3900;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color: white;
+.title1 {
+  width: 100%;
+  background-color: #3e3b3900;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
 }
-#eventlink{
-    font-size: 20px;
-    color: #f98de1;
+#eventlink {
+  font-size: 20px;
+  color: #f98de1;
 }
-.main{
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-    align-content: center;
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
-.eventimg{
-    width: 200;
-    overflow: hidden;
-    padding: 5px;
-    border-radius: 25px;
+.eventimg {
+  width: 200;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 25px;
 }
-.overview{
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.59);
-    width: 280px;
-    color: rgb(255, 255, 255);
-    padding: 11px 10px 0px 10px;
-    position: absolute;
-    left: 0px;
-    right: 0px; 
-    bottom: 0px;
-    height: 100%;
-    transform: translateY(100%);
-    overflow-y: auto;
-    transition: transform 0.25s ease-in;
-    font-size: 15px;
+.overview {
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.59);
+  width: 280px;
+  color: rgb(255, 255, 255);
+  padding: 11px 10px 0px 10px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  transform: translateY(100%);
+  overflow-y: auto;
+  transition: transform 0.25s ease-in;
+  font-size: 15px;
 }
-.event:hover .overview{
-    transform: translateY(0);
+.event:hover .overview {
+  transform: translateY(0);
 }
-.event:hover .title1{
-    display: none;
+.event:hover .title1 {
+  display: none;
 }
-.imgpluscon{
-    background-color: rgb(41, 43, 43);
-    border-radius: 20px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imgpluscon {
+  background-color: rgb(41, 43, 43);
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.teamhead{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ef0d6b;
-    font-family: poppins;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 10px;
+.teamhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ef0d6b;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
-footer{
-    width: 100%;
-    height: 100px;
-    background-color: black;
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
 }
-.team-member{
-    box-shadow: 0 0 5px #ff1493, 0 0 7px #8a2be2, 0 0 10px #00ffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 300px;
-    height: 255px;
-    margin: 30px;
-    background-color: #ffffffe7;   
-    border-radius: 22px;
-    position: relative;
-    color: rgb(0, 0, 0);
-    overflow: hidden;
+.team-member {
+  box-shadow: 0 0 5px #ff1493, 0 0 7px #8a2be2, 0 0 10px #00ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 255px;
+  margin: 30px;
+  background-color: #ffffffe7;
+  border-radius: 22px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
 }
-.members{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+.members {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
-.total{
-    background-color: black;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-    align-content: center;
+.total {
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
-.team-selection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.team-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.year{
-    margin: 70px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    height: 50px;
-    width: 130px;
-    border-radius: 15px;
-    background-color: #d8e2fe6d;
-    border-color: #d8afffe3;
-    border-width: 3px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
+.year {
+  margin: 70px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  height: 50px;
+  width: 130px;
+  border-radius: 15px;
+  background-color: #d8e2fe6d;
+  border-color: #d8afffe3;
+  border-width: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
-.year:hover{
-    cursor: pointer;
-    background-color: #a8bfff70;
-    border-color: #ffaff2cf;
+.year:hover {
+  cursor: pointer;
+  background-color: #a8bfff70;
+  border-color: #ffaff2cf;
 }
 .details {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .alumni {
-    padding: 20px;
-    text-align: center;
-    
+  padding: 20px;
+  text-align: center;
 }
 .heading {
-    color: #ef0d6b;
-    font-family: poppins;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 20px;
+  color: #ef0d6b;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 .body {
-    background-color: #1f1f1fb2;
-    border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  background-color: #1f1f1fb2;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .alumni-card {
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .controls {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .controls button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 400;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
 }
-.controls button:hover{
-    cursor: pointer;
-    background-color: #0064ce;
+.controls button:hover {
+  cursor: pointer;
+  background-color: #0064ce;
 }
 
-.sponsorhead{
-    color: #ef0d6b;
-    font-family: poppins;
-    font-weight: bold;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sponsorhead {
+  color: #ef0d6b;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.ourspon{ 
-    width: 300px;
-    height: 250px;
-    margin: 30px;
-    background-color: #ffffffe7;   
-    border-radius: 28px;
-    position: relative;
-    color: white;
-    border-color: #8a2be2;
-    overflow: hidden;
-    border-width: 5px;
-    border-style: double;
-    
+.ourspon {
+  width: 300px;
+  height: 250px;
+  margin: 30px;
+  background-color: #ffffffe7;
+  border-radius: 28px;
+  position: relative;
+  color: white;
+  border-color: #8a2be2;
+  overflow: hidden;
+  border-width: 5px;
+  border-style: double;
 }
-.ourspon:hover{
-    cursor: pointer;
-     border-color: #372be2;
-     border-style: solid;
+.ourspon:hover {
+  cursor: pointer;
+  border-color: #372be2;
+  border-style: solid;
 }
-.totaspon{
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-    align-content: center;}
-.sponlogo{
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;
-    
+.totaspon {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
-.faculty{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.sponlogo {
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
 }
-.ourteam{
-    background-color: black;
+.faculty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#eventlink{
-    text-decoration: none;
+.ourteam {
+  background-color: black;
 }
-.overview{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#eventlink {
+  text-decoration: none;
 }
-.fac-member{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.overview {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.facdetails{
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.fac-member {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.faculty{
-    width: 400px;
-    height: 210px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0 0 5px #ff1493, 0 0 7px #8a2be2, 0 0 10px #00ffff;
-    margin: 20px;
+.facdetails {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.faculty {
+  width: 400px;
+  height: 210px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 5px #ff1493, 0 0 7px #8a2be2, 0 0 10px #00ffff;
+  margin: 20px;
+}
+.ourteam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.teamcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#teamco1 {
+  font-size: 22px;
+  margin-right: 10px;
+  color: #0064ce;
+}
+#teamco {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #0064ce;
+}
+#teamco:hover,
+#teamco1:hover {
+  cursor: pointer;
+  font-size: 26px;
+  color: #024fa2;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactus {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contacthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef0d6b;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 45px;
+}
+.feed {
+  margin: 20px;
+  height: 450px;
+  width: 950px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback {
+  margin: 20px;
+  height: 500px;
+  width: 950px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.874);
+  padding: 15px;
+}
+.feeddetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#name,
+#mail,
+#subject {
+  margin: 15px;
+  width: 350px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 5px;
+}
+#message {
+  display: flex;
+  vertical-align: top;
+  align-content: left;
+  font-size: 30px;
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  padding: 5px;
+}
+#submit {
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
+  background-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #3a45df;
+}
+.footercont {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+#webteam {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+#webteam:hover {
+  font-size: 18px;
+  color: #63d6eb;
+  font-weight: bold;
+  cursor: pointer;
+}
+.gall h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef0d6b;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.gall-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  width: 80px;
+  height: 100px;
+  border: none;
+  font-size: 60px;
+  padding: 5px;
+  margin: 0px 20px;
+  color: #007bff;
+  background-color: transparent;
+}
+.slide:hover {
+  cursor: pointer;
+  color: #0465cc;
+  font-size: 65px;
+}
+
+.gall-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slide-img {
+  display: none;
+  width: 1200px;
+  height: 650px;
+}
+
+#img1 {
+  display: block;
+}
+.vid h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef0d6b;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.vid-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vidslide {
+  width: 80px;
+  height: 100px;
+  border: none;
+  font-size: 60px;
+  padding: 5px;
+  margin: 0px 20px;
+  color: #007bff;
+  background-color: transparent;
+}
+.vidslide:hover {
+  cursor: pointer;
+  color: #0465cc;
+  font-size: 65px;
+}
+
+.vid-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.vidslide-img {
+  display: none;
+  width: 1200px;
+  height: 650px;
+}
+
+#vidimg1 {
+  display: block;
+}
+@media (max-width: 952px) {
+.navp a{
+    font-size:13px;
+    margin-right:15px;
+}
+.navp a:hover{
+    font-size:17px;
+}
+header {
+  height: 67px;
+}
+.logo {
+  margin-left: 13px;
+  height: 64px;
+  width: 64px;
+}
+.frontpage {
+  background-size:cover;
+  height: 775px;
+  border-radius: 45px;
+}
+.attr {
+  top: 550px;
+  left:31%;
+  height: 45px;
+  width: 348px;
+}
+#conlik {
+  font-size: 21px;
+  margin: 12px;
+}
+#conlik:hover {
+  font-size: 25px;
+}
+.about {
+  font-size: 14px;
+  margin: 3px;
+  border-radius: 13px;
+  padding: 18px;
+  width:96%;
+}
+.aboutus {
+  font-size: 37px;
+}
+.eventhead {
+  font-size: 25px;
+}
+.eventimage {
+  height: 312px;
+  width: 348px;
+}
+.event {
+  width: 246px;
+  margin: 27px;
+  border-radius: 18px;
+}
+.eve {
+  width: 220px;
+  margin: 10px;
+  padding-right: 12px;
+}
+#eventlink {
+  font-size: 17px;
+}
+.eventimg {
+  width: 222px;
+  padding: 3px;
+  border-radius: 22px;
+}
+.overview {
+  border-radius: 21px;
+  width: 222px;
+  padding: 10px 10px 0px 10px;
+  font-size: 12px;
+}
+.imgpluscon {
+  border-radius: 20px;
+  padding: 5px;
+}
+.teamhead {
+  font-size: 25px;
+}
+.team-member {
+  width: 222px;
+  height: 215px;
+  margin: 25px;
+  border-radius: 21px;
+}
+.members {
+  height: 105px;
+  width: 105px;
+}
+.total {
+  padding: 25px;
+}
+.year {
+  margin: 52px;
+  height: 41px;
+  width: 94px;
+  border-radius: 13px;
+  font-size: 14px;
+}
+.alumni {
+  padding: 18px;
+}
+.heading {
+  font-size: 27px;
+}
+.alumni-card {
+  width: 223px;
+  margin: 8px;
+  padding: 9px;
+  border-radius: 8px;
+}
+.controls button {
+  padding: 8px 18px;
+  margin: 0 8px;
+  font-size: 12px;
+}
+.sponsorhead {
+  font-size: 25px;
+}
+.ourspon {
+  width: 222px;
+  height: 202px;
+  margin: 25px;
+}
+.totaspon {
+  padding: 22px;
+}
+.fac-member {
+  margin-top: 5px;
+}
+.facdetails {
+  margin-left: 15px;
+}
+.faculty {
+  width: 354px;
+  height: 185px;
+  border-radius: 13px;
+  margin: 14px;
+}
+#teamco1 {
+  font-size: 17px;
+  margin-right: 8px;
+}
+#teamco {
+  font-size: 15px;
+  margin-right: 8px;
+}
+#teamco:hover,#teamco1:hover {
+  font-size: 21px;
+}
+.contactus {
+  height: 495px;
+}
+.contacthead {
+  font-size: 42px;
+}
+.feed {
+  margin: 15px;
+  height: 390px;
+  width: 865px;
+  border-radius: 18px;
+}
+.feedback {
+  margin: 15px;
+  height: 390px;
+  width: 865px;
+  border-radius: 18px;
+  padding: 12px;
+}
+#name,#mail,#subject {
+  margin: 12px;
+  width: 290px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 17px;
+  padding: 3px;
+}
+#message {
+  font-size: 21px;
+  width: 397px;
+  height: 325px;
+  border-radius: 17px;
+  padding: 3px;
+}
+#submit {
+  font-size: 12px;
+  height: 39px;
+  width: 85px;
+}
+.footercont {
+  font-size: 15px;
+}
+#webteam {
+  font-size: 15px;
+}
+#webteam:hover {
+  font-size: 18px;
+}
+.gall h2 {
+  font-size: 42px;
+}
+.gall-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.slide {
+  width: 45px;
+  height: 84px;
+  font-size: 50px;
+  padding: 3px;
+  margin: 0px 15px;
+}
+.slide:hover {
+  font-size: 49px;
+}
+.slide-img {
+  width: 788px;
+  height: 590px;
+}
+.vid h2 {
+  font-size: 42px;
+}
+.vid-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.vidslide {
+  width: 45px;
+  height: 84px;
+  font-size: 50px;
+  padding: 3px;
+  margin: 0px 15px;
+}
+.vidslide:hover {
+  font-size: 49px;
+}
+.vidslide-img {
+  width: 788px;
+  height: 590px;
+}
 
 }
-.ourteam{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.teamcon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#teamco1{
+@media(max-width:850px){
+    .navp a{
+    display: block;
     font-size: 22px;
-    margin-right: 10px;
-    color: #0064ce;
-}
-#teamco{
-    font-size: 18px;
-    margin-right: 10px;
-    color: #0064ce;
-}
-#teamco:hover,#teamco1:hover{
-    cursor: pointer;
-    font-size: 26px;
-    color: #024fa2;
-}
-.content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contactus{
-    height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contacthead{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ef0d6b;
-    font-family: poppins;
+    margin-bottom: 5px;
+    color: white;
+    }
+    .nav{
+      min-height: 35vh;
+      width: 100vw;
+      background-image: url(starsky.jpg);
+      background-size: cover;
+      opacity: 100%;
+      top: 56.5px;  
+      left: -101%;  
+      position: absolute;
+      transition: all 0.4s linear;
+      display:flex;
+      flex: left;
+      flex-direction:column;
+    }
+    .navp.active {
+        transition: left 1s ease-in;
+    }
+.navp a:hover{
+    font-size:26px;
     font-weight: bold;
-    font-size: 45px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: #ef0d6b;
 }
-.feed{
-    margin: 20px;
-    height: 450px;
-    width: 950px;
+.checkbox{
+        display: block;
+     }
+header {
+  height: 65px;
+}
+.logo {
+  margin-left: 11px;
+  height: 62px;
+  width: 58px;
+}
+.frontpage {
+  background-size:cover;
+  height: 731px;
+  border-radius: 45px;
+}
+.attr {
+  top: 517px;
+  left:28%;
+  height: 45px;
+  width: 348px;
+}
+#conlik {
+  font-size: 21px;
+  margin: 12px;
+}
+#conlik:hover {
+  font-size: 25px;
+}
+.about {
+  font-size: 12px;
+  margin: 3px;
+  border-radius: 12px;
+  padding: 15px;
+  width:96%;
+}
+.aboutus {
+  font-size: 37px;
+}
+.eventhead {
+  font-size: 25px;
+}
+.eventimage {
+  height: 300px;
+  width: 312px;
+}
+.event {
+  width: 231px;
+  margin: 12px;
+  border-radius: 14px;
+}
+.eve {
+  width: 220px;
+  margin: 10px;
+  padding-right: 14px;
+}
+#eventlink {
+  font-size: 17px;
+}
+.eventimg {
+  width: 212px;
+  padding: 2px;
+  border-radius: 18px;
+}
+.overview {
+  border-radius: 21px;
+  width: 212px;
+  padding: 10px 10px 0px 10px;
+  font-size: 11px;
+}
+.teamhead {
+  font-size: 25px;
+}
+.team-member {
+  width: 202px;
+  height: 192px;
+  margin: 18px;
+  border-radius: 17px;
+}
+.members {
+  height: 90px;
+  width: 90px;
+}
+.details{
+  font-size: 13px;
+}
+.total {
+  padding: 20px;
+}
+.year {
+  margin: 40px;
+  height: 35px;
+  width: 88px;
+  border-radius: 11px;
+  font-size: 12px;
+}
+.alumni {
+  padding: 18px;
+}
+.heading {
+  font-size: 27px;
+}
+.alumni-card {
+  width: 223px;
+  margin: 8px;
+  padding: 9px;
+  border-radius: 8px;
+}
+.controls button {
+  padding: 8px 18px;
+  margin: 0 8px;
+  font-size: 12px;
+}
+.sponsorhead {
+  font-size: 25px;
+}
+.ourspon {
+  width: 192px;
+  height: 170px;
+  margin: 20px;
+}
+.totaspon {
+  padding: 22px;
+}
+.fac-member {
+  margin-top: 5px;
+}
+.facdetails {
+  margin-left: 15px;
+}
+.faculty {
+  width: 354px;
+  height: 185px;
+  border-radius: 13px;
+  margin: 14px;
+}
+#teamco1 {
+  font-size: 17px;
+  margin-right: 8px;
+}
+#teamco {
+  font-size: 15px;
+  margin-right: 8px;
+}
+#teamco:hover,#teamco1:hover {
+  font-size: 21px;
+}
+.contactus {
+  height: 475px;
+}
+.contacthead {
+  font-size: 42px;
+}
+.feed {
+  margin: 11px;
+  height: 310px;
+  width: 750px;
+  border-radius: 14px;
+}
+.feedback {
+  margin: 15px;
+  height: 310px;
+  width: 750px;
+  border-radius: 14px;
+  padding: 7px;
+}
+#name,#mail,#subject {
+  margin: 12px;
+  width: 290px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 17px;
+  padding: 3px;
+}
+#message {
+  font-size: 21px;
+  width: 315px;
+  height: 245px;
+  border-radius: 17px;
+  padding: 3px;
+}
+#submit {
+  font-size: 10px;
+  height: 35px;
+  width: 80px;
+}
+.footercont {
+  font-size: 15px;
+}
+#webteam {
+  font-size: 15px;
+}
+#webteam:hover {
+  font-size: 18px;
+}
+.gall h2 {
+  font-size: 42px;
+}
+.gall-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.slide {
+  width: 40px;
+  height: 80px;
+  font-size: 35px;
+  padding: 2px;
+  margin: 0px 10px;
+}
+.slide:hover {
+  font-size: 40px;
+}
+.slide-img {
+  width: 650px;
+  height: 515px;
+}
+.vid h2 {
+  font-size: 42px;
+}
+.vid-container {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.vidslide {
+  width: 40px;
+  height: 80px;
+  font-size: 35px;
+  padding: 2px;
+  margin: 0px 10px;
+}
+.vidslide:hover {
+  font-size: 40px;
+}
+.vidslide-img {
+  width: 650px;
+  height: 515px;
+}
+
+}
+@media (max-width: 952px) {
+  .navp a{
+      font-size:13px;
+      margin-right:15px;
+  }
+  .navp a:hover{
+      font-size:17px;
+  }
+  header {
+    height: 67px;
+  }
+  .logo {
+    margin-left: 13px;
+    height: 64px;
+    width: 64px;
+  }
+  .frontpage {
+    background-size:cover;
+    height: 775px;
+    border-radius: 45px;
+  }
+  .attr {
+    top: 550px;
+    left:31%;
+    height: 45px;
+    width: 348px;
+  }
+  #conlik {
+    font-size: 21px;
+    margin: 12px;
+  }
+  #conlik:hover {
+    font-size: 25px;
+  }
+  .about {
+    font-size: 14px;
+    margin: 3px;
+    border-radius: 13px;
+    padding: 18px;
+    width:96%;
+  }
+  .aboutus {
+    font-size: 37px;
+  }
+  .eventhead {
+    font-size: 25px;
+  }
+  .eventimage {
+    height: 312px;
+    width: 348px;
+  }
+  .event {
+    width: 246px;
+    margin: 27px;
+    border-radius: 18px;
+  }
+  .eve {
+    width: 220px;
+    margin: 10px;
+    padding-right: 12px;
+  }
+  #eventlink {
+    font-size: 17px;
+  }
+  .eventimg {
+    width: 222px;
+    padding: 3px;
+    border-radius: 22px;
+  }
+  .overview {
+    border-radius: 21px;
+    width: 222px;
+    padding: 10px 10px 0px 10px;
+    font-size: 12px;
+  }
+  .imgpluscon {
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.feedback{
-    margin: 20px;
-    height: 500px;
-    width: 950px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.874);
-    padding: 15px;
-}
-.feeddetails{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#name,#mail,#subject{
+    padding: 5px;
+  }
+  .teamhead {
+    font-size: 25px;
+  }
+  .team-member {
+    width: 222px;
+    height: 215px;
+    margin: 25px;
+    border-radius: 21px;
+  }
+  .members {
+    height: 105px;
+    width: 105px;
+  }
+  .total {
+    padding: 25px;
+  }
+  .year {
+    margin: 52px;
+    height: 41px;
+    width: 94px;
+    border-radius: 13px;
+    font-size: 14px;
+  }
+  .alumni {
+    padding: 18px;
+  }
+  .heading {
+    font-size: 27px;
+  }
+  .alumni-card {
+    width: 223px;
+    margin: 8px;
+    padding: 9px;
+    border-radius: 8px;
+  }
+  .controls button {
+    padding: 8px 18px;
+    margin: 0 8px;
+    font-size: 12px;
+  }
+  .sponsorhead {
+    font-size: 25px;
+  }
+  .ourspon {
+    width: 222px;
+    height: 202px;
+    margin: 25px;
+  }
+  .totaspon {
+    padding: 22px;
+  }
+  .fac-member {
+    margin-top: 5px;
+  }
+  .facdetails {
+    margin-left: 15px;
+  }
+  .faculty {
+    width: 354px;
+    height: 185px;
+    border-radius: 13px;
+    margin: 14px;
+  }
+  #teamco1 {
+    font-size: 17px;
+    margin-right: 8px;
+  }
+  #teamco {
+    font-size: 15px;
+    margin-right: 8px;
+  }
+  #teamco:hover,#teamco1:hover {
+    font-size: 21px;
+  }
+  .contactus {
+    height: 495px;
+  }
+  .contacthead {
+    font-size: 42px;
+  }
+  .feed {
     margin: 15px;
-    width: 350px;
-    height: 40px;
+    height: 390px;
+    width: 865px;
+    border-radius: 18px;
+  }
+  .feedback {
+    margin: 15px;
+    height: 390px;
+    width: 865px;
+    border-radius: 18px;
+    padding: 12px;
+  }
+  #name,#mail,#subject {
+    margin: 12px;
+    width: 290px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 17px;
+    padding: 3px;
+  }
+  #message {
+    font-size: 21px;
+    width: 397px;
+    height: 325px;
+    border-radius: 17px;
+    padding: 3px;
+  }
+  #submit {
+    font-size: 12px;
+    height: 39px;
+    width: 85px;
+  }
+  .footercont {
     font-size: 15px;
-    border-radius: 20px;
-    padding: 5PX;
-}
-#message{
-    display: flex;
-    vertical-align: top;
-    align-content:left ;
-    font-size: 30px;
-    width: 500px;
-    height: 400px;
-    border-radius: 20px;
-    padding: 5PX;
-}
-#submit{
-    color: white;
-    border-radius: 10px;
+  }
+  #webteam {
     font-size: 15px;
-    height: 50px;
-    width: 100px;
-    background-color: #007bff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#submit:hover{
-    cursor: pointer;
-    background-color:#3a45df;
-}
-.footercont{
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-#webteam{
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-}
-#webteam:hover{
+  }
+  #webteam:hover {
     font-size: 18px;
-    color: #63d6eb;
-    font-weight: bold;
-    cursor: pointer;
-}
-.gall h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ef0d6b;
-    font-family: poppins;
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.gall-container{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide{
-    width: 80px;
+  }
+  .gall h2 {
+    font-size: 42px;
+  }
+  .gall-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .slide {
+    width: 45px;
+    height: 84px;
+    font-size: 50px;
+    padding: 3px;
+    margin: 0px 15px;
+  }
+  .slide:hover {
+    font-size: 49px;
+  }
+  .slide-img {
+    width: 788px;
+    height: 590px;
+  }
+  .vid h2 {
+    font-size: 42px;
+  }
+  .vid-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .vidslide {
+    width: 45px;
+    height: 84px;
+    font-size: 50px;
+    padding: 3px;
+    margin: 0px 15px;
+  }
+  .vidslide:hover {
+    font-size: 49px;
+  }
+  .vidslide-img {
+    width: 788px;
+    height: 590px;
+  }
+  
+  }
+  @media(max-width:850px){
+      .navp a{
+      display: block;
+      font-size: 22px;
+      margin-bottom: 5px;
+      color: white;
+      }
+      .nav{
+        min-height: 35vh;
+        width: 100vw;
+        background-image: url(starsky.jpg);
+        background-size: cover;
+        opacity: 100%;
+        top: 56.5px;  
+        left: -101%;  
+        position: absolute;
+        transition: all 0.4s linear;
+        display:flex;
+        flex: left;
+        flex-direction:column;
+      }
+      .navp.active {
+          transition: left 1s ease-in;
+      }
+  .navp a:hover{
+      font-size:26px;
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: white;
+      color: #ef0d6b;
+  }
+  .checkbox{
+          display: block;
+       }
+  header {
+    height: 65px;
+  }
+  .logo {
+    margin-left: 11px;
+    height: 62px;
+    width: 58px;
+  }
+  .frontpage {
+    background-size:cover;
+    height: 651px;
+    border-radius: 45px;
+  }
+  .attr {
+    top: 455px;
+    left:4%;
+    height: 45px;
+    width: 348px;
+  }
+  #conlik {
+    font-size: 19px;
+    margin: 12px;
+  }
+  #conlik:hover {
+    font-size: 21px;
+  }
+  .about {
+    font-size: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    width:96%;
+  }
+  .aboutus {
+    font-size: 28px;
+  }
+  .eventhead {
+    font-size: 21px;
+  }
+  .eventimage {
+    height: 200px;
+    width: 312px;
+  }
+  .event {
+    width: 166px;
+    margin: 8px;
+    border-radius: 14px;
+  }
+  .eve {
+    width: 166px;
+    margin: 8px;
+    padding-right: 12px;
+  }
+  #eventlink {
+    font-size: 10px;
+  }
+  .eventimg {
+    width: 152px;
+    padding: 2px;
+    border-radius: 12px;
+  }
+  .overview {
+    border-radius: 21px;
+    width: 152px;
+    padding: 6px 6px 6px 6px;
+    font-size: 10px;
+  }
+  .title1{
+    font-size: 15px;
+  }
+  .teamhead {
+    font-size: 21px;
+  }
+  .team-member {
+    width: 152px;
+    height: 142px;
+    margin: 8px;
+    border-radius: 17px;
+  }
+  .members {
+    height: 75px;
+    width: 75px;
+  }
+  .details{
+    font-size: 10px;
+  }
+  .total {
+    padding: 14px;
+  }
+  .year {
+    margin: 15px;
+    height: 35px;
+    width: 78px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  .alumni {
+    padding: 18px;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .alumni-card {
+    width: 223px;
+    margin: 8px;
+    padding: 9px;
+    border-radius: 8px;
+  }
+  .controls button {
+    padding: 8px 18px;
+    margin: 0 8px;
+    font-size: 10px;
+  }
+  .sponsorhead {
+    font-size: 21px;
+  }
+  .ourspon {
+    width: 122px;
     height: 100px;
-    border: none;
-    font-size: 60px;
+    margin: 14px;
+  }
+  .totaspon {
+    padding: 14px;
+  }
+  .fac-member {
+    margin-top: 5px;
+  }
+  .facdetails {
+    margin-left: 15px;
+  }
+  .faculty {
+    width: 274px;
+    height: 155px;
+    border-radius: 11px;
+    margin: 12px;
+  }
+  #teamco1 {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  #teamco {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  #teamco:hover,#teamco1:hover {
+    font-size: 17px;
+  }
+  .contactus {
+    height: 415px;
+  }
+  .contacthead {
+    font-size: 38px;
+  }
+  .feed {
+    margin: 8px;
+    height: 255px;
+    width: 345px;
+    border-radius: 12px;
+  }
+  .feedback {
+    margin: 10px;
+    height: 255px;
+    width: 345px;
+    border-radius: 12px;
     padding: 5px;
-    margin: 0px 20px;
-    color: #007bff;
-    background-color: transparent;
-}
-.slide:hover{
-    cursor: pointer;
-    color: #0465cc;
-    font-size: 65px;
-}
-
-.gall-images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.slide-img{
-    display: none;
-    width: 1200px;
-    height: 650px;
-}
-
-#img1{
-    display: block;
-}
-.vid h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ef0d6b;
-    font-family: poppins;
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.vid-container{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.vidslide{
-    width: 80px;
-    height: 100px;
-    border: none;
-    font-size: 60px;
-    padding: 5px;
-    margin: 0px 20px;
-    color: #007bff;
-    background-color: transparent;
-}
-.vidslide:hover{
-    cursor: pointer;
-    color: #0465cc;
-    font-size: 65px;
-}
-
-.vid-images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.vidslide-img{
-    display: none;
-    width: 1200px;
-    height: 650px;
-}
-
-#vidimg1{
-    display: block;
-}
+  }
+  #name,#mail,#subject {
+    margin: 7px;
+    width: 120px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 14px;
+    padding: 2px;
+  }
+  #message {
+    font-size: 16px;
+    width: 185px;
+    height: 161px;
+    border-radius: 12px;
+    padding: 2px;
+  }
+  #submit {
+    font-size: 10px;
+    height: 35px;
+    width: 95px;
+  }
+  .footercont {
+    font-size: 15px;
+  }
+  #webteam {
+    font-size: 15px;
+  }
+  #webteam:hover {
+    font-size: 18px;
+  }
+  .gall h2 {
+    font-size: 38px;
+  }
+  .gall-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .slide {
+    width: 30px;
+    height: 65px;
+    font-size: 25px;
+    padding: 2px;
+    margin: 0px 10px;
+  }
+  .slide:hover {
+    font-size: 30px;
+  }
+  .slide-img {
+    width: 285px;
+    height: 304px;
+  }
+  .vid h2 {
+    font-size: 38px;
+  }
+  .vid-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .vidslide {
+    width: 30px;
+    height: 65px;
+    font-size: 25px;
+    padding: 2px;
+    margin: 0px 10px;
+  }
+  .vidslide:hover {
+    font-size: 30px;
+  }
+  .vidslide-img {
+    width: 285px;
+    height: 304px;
+  }
+  
+  }
