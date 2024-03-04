@@ -1195,36 +1195,32 @@ header {
     font-size: 25px;
   }
   .eventimage {
-    height: 312px;
-    width: 348px;
+    height: 200px;
+    width: 312px;
   }
   .event {
-    width: 246px;
-    margin: 27px;
-    border-radius: 18px;
+    width: 166px;
+    margin: 8px;
+    border-radius: 14px;
   }
   .eve {
-    width: 220px;
-    margin: 10px;
+    width: 166px;
+    margin: 8px;
     padding-right: 12px;
   }
   #eventlink {
-    font-size: 17px;
+    font-size: 10px;
   }
   .eventimg {
-    width: 222px;
-    padding: 3px;
-    border-radius: 22px;
+    width: 152px;
+    padding: 2px;
+    border-radius: 12px;
   }
   .overview {
-    border-radius: 21px;
-    width: 222px;
-    padding: 10px 10px 0px 10px;
-    font-size: 12px;
-  }
-  .imgpluscon {
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 12px;
+    width: 152px;
+    padding: 6px 6px 6px 6px;
+    font-size: 10px;
   }
   .teamhead {
     font-size: 25px;
@@ -1467,7 +1463,7 @@ header {
   }
   .eventimage {
     height: 200px;
-    width: 312px;
+    width: 152px;
   }
   .event {
     width: 166px;
@@ -1476,14 +1472,14 @@ header {
   }
   .eve {
     width: 166px;
-    margin: 8px;
-    padding-right: 12px;
+    margin: px;
+    padding-right: 16px;
   }
   #eventlink {
     font-size: 10px;
   }
   .eventimg {
-    width: 152px;
+    width: 148px;
     padding: 2px;
     border-radius: 12px;
   }
@@ -1666,3 +1662,53 @@ header {
   }
   
   }
+@media(width < 373px){
+  .eventimage {
+    height: 200px;
+    width: 136px;
+  }
+  .event {
+    width: 148px;
+    margin: 7px;
+    border-radius: 14px;
+  }
+  .eve {
+    width: 148px;
+    margin: 5px;
+    padding-right: 12px;
+  }
+  #eventlink {
+    font-size: 10px;
+  }
+  .eventimg {
+    width: 136px;
+    padding: 2px;
+    border-radius: 16px;
+  }
+  .overview {
+    border-radius: 16px;
+    width: 136px;
+    padding: 6px 6px 6px 6px;
+    font-size: 10px;
+  }
+  .team-member {
+    width: 142px;
+    height: 137px;
+  }
+  .members {
+    height: 75px;
+    width: 75px;
+  }
+  .feed {
+    width: 338px;
+  }
+  .feedback {
+    width: 338px;
+  }
+  .slide {
+    margin: 0px 6px;
+  }
+  .vidslide {
+    margin: 0px 6px;
+  }
+}
