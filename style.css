@@ -1392,7 +1392,7 @@ header {
   }
   
   }
-  @media(max-width:850px){
+  @media(max-width:600px){
       .navp a{
       display: block;
       font-size: 22px;
@@ -1488,7 +1488,7 @@ header {
     border-radius: 12px;
   }
   .overview {
-    border-radius: 21px;
+    border-radius: 12px;
     width: 152px;
     padding: 6px 6px 6px 6px;
     font-size: 10px;
@@ -1530,6 +1530,7 @@ header {
   }
   .alumni-card {
     width: 223px;
+    font-size: 18px;
     margin: 8px;
     padding: 9px;
     border-radius: 8px;
