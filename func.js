@@ -272,7 +272,8 @@ document.addEventListener('DOMContentLoaded', function() {
             navpa[i].addEventListener('click', function() {
                 checkbox.checked = false; // Uncheck the checkbox
                 setTimeout(function() {
-                    nav.style.left = '-205%';}, 800);  
+                    nav.style.left = '-205%';
+                    attr.style.display = 'flex';}, 800);  
             });
         }
 
